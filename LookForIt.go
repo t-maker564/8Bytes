@@ -45,7 +45,7 @@ func simulationOfCreatingERC20Address() {
 func main() {
 	// Uniswap Factory Depolyer Address
 	factoryAddress := common.HexToAddress("0x1F98431c8aD98523631AE4a59f267346ea31F984")
-	// this is just simple bytecode simulation of UniswapV3Pool bcz its the deployed contract
+	// this is just simple bytecode simulation of UniswapV3Pool because its the deployed contract
 	uniswapV3Pool := common.FromHex("0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122042d9a0f7e15792bf1c47bd5e7968ae3e69d84643e78045dcea2d4fb961135b8064736f6c63430008130033")
 
 	for {
