@@ -37,7 +37,7 @@ func simulationOfCreatingERC20Address() {
 	genRandomAddress := make([]byte, 20)
 	rand.Read(genRandomAddress)
 
-	// deployer token1 could be any token1
+	// deployer of token1 it could be any address.
 	deployerAddress := common.HexToAddress("0xdddddddddddddddddddddddddddddddddddddddd")
 	// just an example of our ERC20 token bytecode
 	ourERC20TokenByteCode := common.FromHex("0x6080604052")
@@ -61,6 +61,9 @@ func main() {
 
 		poolToLower := strings.ToLower(fmt.Sprintf("%s", pool))
 		// fmt.Println(poolToLower[:18])
+		
+		// 0x8ad599c3a0ff1de0 is the first 8 bytes of the example you provided in 
+		// https://github.com/code-423n4/2023-11-panoptic/blob/main/contracts/libraries/PanopticMath.sol#L26-L40
 		if poolToLower[:18] == "0x8ad599c3a0ff1de0" || poolToLower[:18] == "0x7858e59e0c01ea06" {
 			fmt.Printf("0x%x %s %x\n", token1, pool, salt)
 		}
