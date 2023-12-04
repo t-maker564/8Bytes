@@ -1,5 +1,5 @@
 # 8Bytes
 
-init golang work space:
+init go work space:
   go mod init Panoptic
   go mod tidy
