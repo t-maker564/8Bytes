@@ -33,7 +33,7 @@ func calculateSaltBasedOnTheGivenData() {
 // we brute force Address with salt until we find the
 // same first 8 bytes.
 func simulationOfCreatingERC20Address() {
-	// deployer of token1 contract could be any address.
+	// deployer of token1 contract it could be any address.
 	deployerAddress := common.HexToAddress("0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1")
 
 	// just an example of our ERC20 token bytecode.
