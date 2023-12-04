@@ -1,5 +1,5 @@
 # 8Bytes
 
 init go work space:
-  go mod init Panoptic
-  go mod tidy
+  1) go mod init Panoptic
+  2) go mod tidy
