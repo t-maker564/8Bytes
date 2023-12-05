@@ -50,8 +50,8 @@ func main() {
 	uniswapV3Pool := common.FromHex("0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122042d9a0f7e15792bf1c47bd5e7968ae3e69d84643e78045dcea2d4fb961135b8064736f6c63430008130033")
 
 	for {
-		simulationOfCreatingERC20Address()
 		calculateSaltBasedOnTheGivenData()
+		simulationOfCreatingERC20Address()
 
 		// this code simulate this line of code in UniswapV3PoolDeployer.sol
 		// pool = token1(new UniswapV3Pool{salt: keccak256(abi.encode(token0, token1, fee))}());
